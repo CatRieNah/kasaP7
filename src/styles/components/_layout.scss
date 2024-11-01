@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    min-height: 100vh;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+#root{
+    max-width: 1440px;
+}
+main{
+    min-height: 80vh;
+}
+
+//Responsive
+@media (max-width: 1024px)and (min-width:769px){
+
+}
+@media(max-width:768px){
+
+}
