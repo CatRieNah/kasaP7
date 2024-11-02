@@ -1,10 +1,12 @@
 import React from 'react';
-
+import Banner from '../components/Banner';
+import bannerImage from "../assets/banner/bannerAbout.png"
 const About = () => {
     return (
-        <div>
-            
-        </div>
+        <>
+            <Banner imageUrl={bannerImage}/>
+
+        </>
     );
 };
 

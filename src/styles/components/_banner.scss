@@ -1,0 +1,46 @@
+.banner{
+    margin: 0 100px;
+    height: 220px;
+    border-radius: 25px;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    place-items: center;
+    filter:drop-shadow(0 4px 4px rgba(0,0,0,.25)) ;
+    overflow: hidden;
+    margin-bottom: 35px;
+    color: rgba(255, 255, 255, 1);
+    position: relative;
+    
+    &::after{
+        position: absolute;
+        content: "";
+        inset: 0;
+        background-color: rgba(0,0,0,.6);
+        z-index: 1;
+    }
+    
+    h1{
+        font-size: 48px;
+        z-index: 2;
+    }
+}
+//responsive
+@media (max-width: 1024px) and (min-width: 769px){
+    .banner{
+        height: 175px; 
+
+        h1{
+            font-size: 36px;
+        }
+    }
+}
+@media (max-width: 768px){
+    .banner{
+        height: 150px;
+        
+        h1{
+            font-size: 24px;
+        }
+    }
+}

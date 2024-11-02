@@ -12,6 +12,7 @@ html, body {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 #root {
@@ -93,6 +94,72 @@ footer p {
     width: 130px;
     text-wrap: wrap;
     font-size: 14px;
+  }
+}
+.error {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 100px;
+}
+.error > * {
+  text-align: center;
+  margin-bottom: 3em;
+}
+.error img {
+  width: 600px;
+  margin: 3em auto;
+}
+.error p {
+  font-size: 36px;
+  font-weight: 500;
+  color: rgb(255, 96, 96);
+}
+.error a {
+  text-decoration: underline;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.banner {
+  margin: 0 100px;
+  height: 220px;
+  border-radius: 25px;
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  place-items: center;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+  overflow: hidden;
+  margin-bottom: 35px;
+  color: rgb(255, 255, 255);
+  position: relative;
+}
+.banner::after {
+  position: absolute;
+  content: "";
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+.banner h1 {
+  font-size: 48px;
+  z-index: 2;
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+  .banner {
+    height: 175px;
+  }
+  .banner h1 {
+    font-size: 36px;
+  }
+}
+@media (max-width: 768px) {
+  .banner {
+    height: 150px;
+  }
+  .banner h1 {
+    font-size: 24px;
   }
 }
 
