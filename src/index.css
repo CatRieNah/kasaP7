@@ -236,5 +236,49 @@ footer p {
     font-size: 13px;
   }
 }
+.dropdown-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0 200px;
+  margin-bottom: 35px;
+  text-align: center;
+}
+
+.dropdown {
+  background: rgba(246, 246, 246, 0.45);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.dropdown-title {
+  display: flex;
+  justify-content: space-between;
+  background: rgb(255, 96, 96);
+  padding: 15px;
+  border-radius: 5px;
+}
+.dropdown-title h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+}
+.dropdown-title button {
+  background: none;
+  border: none;
+}
+.dropdown-title button .fa-chevron-down {
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+}
+.dropdown p {
+  margin-top: 10px;
+  padding: 15px;
+  text-align: justify;
+}
+
+.rotated {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+}
 
 /*# sourceMappingURL=index.css.map */
